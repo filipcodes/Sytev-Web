@@ -1,0 +1,63 @@
+//!-------------------------------
+//!----------VARIABLES------------
+//!-------------------------------
+
+//* -------COLORS--------
+//? -------pure colors-------
+$green: #006060;
+$green-tint: #1a7070;
+$green-shade: #015252;
+
+$yellow: #fccb68;
+$yellow-tint: #fcd077;
+$yellow-shade: #e3b75e;
+
+$black: #171717;
+$white: #fafafa;
+
+//? ---------colors in components--------
+$color--background: $white;
+$color--text-dark: $black;
+$color--text-light: $white;
+
+$color--primary-btn-background: $green;
+$color--primary-btn-background-hover: $green-shade;
+//* -------FONTS--------
+$font-main: "Poppins", sans-serif;
+//* -------ANIMATIONS--------
+$animation--time-short: 0.3s;
+
+//!----------------------------
+//!----------MIXINS------------
+//!----------------------------
+
+@mixin grid($cols, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: $gap;
+  @content;
+}
+
+@mixin pos-abs($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin pseudo($loc: before, $content: "", $pos: absolute) {
+  position: relative;
+  &::#{$loc} {
+    content: $content;
+    position: $pos;
+    @content;
+  }
+}
+
+@mixin center-content($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
