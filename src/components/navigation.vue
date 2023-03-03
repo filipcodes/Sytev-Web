@@ -15,8 +15,21 @@
           </li>
         </ul>
         <div class="navigation__buttons">
-          <linkBtn class="navigation__button">Kontakt</linkBtn>
-          <button class="navigation__button">Podporte nás</button>
+          <linkButton
+            isLink="true"
+            type="secondary"
+            size="small"
+            class="navigation__button"
+            >Kontakt</linkButton
+          >
+          <linkButton
+            isLink="true"
+            type="primary"
+            size="small"
+            class="navigation__button"
+          >
+            Podporte nás
+          </linkButton>
         </div>
       </nav>
     </div>
@@ -96,7 +109,7 @@ export default {
     }
     &__buttons {
       display: flex;
-      gap: 4rem;
+      gap: 1.6rem;
     }
   }
 }
