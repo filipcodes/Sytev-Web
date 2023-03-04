@@ -17,14 +17,14 @@
       </nav>
       <div class="navigation__buttons">
         <linkButton
-          isLink="true"
+          isLink
           type="secondary"
           size="small"
           class="navigation__button"
           >Kontakt</linkButton
         >
         <linkButton
-          isLink="true"
+          isLink
           type="primary"
           size="small"
           class="navigation__button"
@@ -76,10 +76,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: stretch;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: $white;
 
   .container {
     width: 100%;
-    max-width: 140rem;
+    max-width: 160rem;
     display: flex;
     align-items: center;
   }
