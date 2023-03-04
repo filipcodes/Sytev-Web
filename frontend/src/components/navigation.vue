@@ -55,7 +55,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@use "../assets/styles/abstracts.scss" as *;
+@use "../assets/styles/abstracts" as *;
 
 .header {
   box-shadow: 0 0 2.4rem rgba($black, 0.1);

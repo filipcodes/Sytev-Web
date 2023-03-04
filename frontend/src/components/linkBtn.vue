@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/styles/abstracts.scss" as *;
+@use "../assets/styles/abstracts" as *;
 
 .btn {
   display: inline-block;

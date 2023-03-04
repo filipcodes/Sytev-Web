@@ -14,8 +14,8 @@ import headerNav from "./components/navigation.vue";
 
 <style lang="scss">
 //general and reusable styles
-@import "./assets/styles/reset.scss";
-@import "./assets/styles/abstracts.scss";
+@import "assets/styles/reset";
+@import "assets/styles/abstracts";
 
 .container {
   max-width: 120rem;
