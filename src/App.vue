@@ -2,6 +2,7 @@
 import linkButton from "./components/linkBtn.vue";
 import headerNav from "./components/navigation.vue";
 import heroSection from "./components/hero.vue";
+import footerSection from "./components/footer.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import heroSection from "./components/hero.vue";
     <linkButton isLink type="secondary" href="#"> Secondary </linkButton>
     <linkButton type="tertiary" href="#"> Tertiary </linkButton>
   </div>
+  <footerSection></footerSection>
 </template>
 
 <style lang="scss">
@@ -23,8 +25,8 @@ h1 {
   color: $white;
   font-size: 8rem;
   line-height: 1.3;
-  width: 60%;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2rem;
+  width: 70%;
 }
 
 .container {
@@ -50,5 +52,23 @@ h1 {
 
   @include center-content;
   gap: 5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $white;
+  width: 10rem;
+  height: 10rem;
+  &::after {
+    font-size: 5.6rem;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba($white, 0.7);
+}
+
+.swiper-pagination-bullet-active {
+  background: $white;
 }
 </style>
