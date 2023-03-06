@@ -27,6 +27,7 @@ h1 {
   line-height: 1.3;
   margin-bottom: 2rem;
   width: 70%;
+  letter-spacing: 1px;
 }
 
 .container {

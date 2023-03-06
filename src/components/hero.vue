@@ -37,6 +37,10 @@
         <div class="container">
           <span class="uptitle">Klubovňa</span>
           <h1 class="hero__title">Využi čas naplno</h1>
+          <p class="hero__subtitle">
+            V našom programe dobrovoľníctva je už viac ako 5000 študentov. Práve
+            TY sa môžeš stať jedným z nich!
+          </p>
           <linkButton type="primary" isLink href="#">Zisti viac</linkButton>
         </div>
       </swiper-slide>

@@ -165,7 +165,7 @@ export default {
   }
 
   &__logo {
-    width: 12rem;
+    width: 13rem;
     align-self: center;
   }
 
