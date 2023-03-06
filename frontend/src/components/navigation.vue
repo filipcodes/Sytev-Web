@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <a href="#" class="logo">
-        <span>LOGO</span>
+        <img src="../assets/images/sytev_logo.png" alt="Logo of Systev" />
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -14,11 +14,24 @@
             <a href="link.url" class="navigation__link">{{ link.label }}</a>
           </li>
         </ul>
-        <div class="navigation__buttons">
-          <linkBtn class="navigation__button">Kontakt</linkBtn>
-          <button class="navigation__button">Podporte nás</button>
-        </div>
       </nav>
+      <div class="navigation__buttons">
+        <linkButton
+          isLink
+          type="secondary"
+          size="small"
+          class="navigation__button"
+          >Kontakt</linkButton
+        >
+        <linkButton
+          isLink
+          type="primary"
+          size="small"
+          class="navigation__button"
+        >
+          Podporte nás
+        </linkButton>
+      </div>
     </div>
   </header>
 </template>
@@ -59,27 +72,38 @@ export default {
 
 .header {
   box-shadow: 0 0 2.4rem rgba($black, 0.1);
-  height: 8rem;
+  height: 8.6rem;
   display: flex;
   align-items: center;
   justify-content: stretch;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: $white;
 
   .container {
     width: 100%;
+    max-width: 160rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 5.6rem;
+    img {
+      height: 6.4rem;
+    }
   }
 
   .navigation {
     font-size: 1.8rem;
-    display: flex;
-    gap: 4rem;
-    align-items: center;
+    font-weight: 400;
+    letter-spacing: 1px;
 
+    margin-right: auto;
     &__list {
       display: flex;
-      gap: 4rem;
+      gap: 4.2rem;
     }
 
     &__item {
@@ -96,7 +120,7 @@ export default {
     }
     &__buttons {
       display: flex;
-      gap: 4rem;
+      gap: 1.6rem;
     }
   }
 }

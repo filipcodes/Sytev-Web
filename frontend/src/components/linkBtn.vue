@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "LinkBtn",
+  name: "LinkButton",
   props: {
     isLink: Boolean,
     type: {
@@ -40,7 +40,7 @@ export default {
 .btn {
   display: inline-block;
 
-  border-radius: 6px;
+  border-radius: $border-radius-small;
 
   text-decoration: none;
   color: $color--text-light;

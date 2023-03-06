@@ -22,8 +22,15 @@ $color--text-light: $white;
 
 $color--primary-btn-background: $green;
 $color--primary-btn-background-hover: $green-shade;
+
+$color--footer-background: $green-shade;
+
 //* -------FONTS--------
 $font-main: "Poppins", sans-serif;
+
+//* -------BORDERS--------
+$border-radius-small: 0.6rem;
+
 //* -------ANIMATIONS--------
 $animation--time-short: 0.3s;
 
