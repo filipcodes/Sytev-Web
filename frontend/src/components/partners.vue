@@ -9,8 +9,8 @@
     </div>
   </div>
 </template>
-
 <script>
+
 import axios from "axios";
 
 const LOCALHOST_URL = "http://localhost:1337/";
