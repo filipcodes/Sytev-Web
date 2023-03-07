@@ -3,11 +3,13 @@ import linkButton from "./components/linkBtn.vue";
 import headerNav from "./components/navigation.vue";
 import heroSection from "./components/hero.vue";
 import footerSection from "./components/footer.vue";
+import partners from "./components/partners.vue";
 </script>
 
 <template>
   <headerNav></headerNav>
   <heroSection></heroSection>
+  <partners></partners>
   <div class="container buttons">
     <linkButton type="primary" href="#"> Primary </linkButton>
     <linkButton isLink type="secondary" href="#"> Secondary </linkButton>
